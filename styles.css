@@ -1,0 +1,356 @@
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  color: #111827;
+  background: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.site-header {
+  height: 108px;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  padding: 0 80px;
+  background: #fff;
+}
+
+.brand {
+  color: #6250ed;
+  font-size: 48px;
+  font-weight: 700;
+  letter-spacing: -2px;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  gap: 38px;
+}
+
+.main-nav a,
+.footer-links a {
+  color: #111827;
+  text-decoration: none;
+}
+
+.main-nav a {
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.header-actions {
+  justify-self: end;
+  display: flex;
+  gap: 32px;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 62px;
+  padding: 0 34px;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.button-outline {
+  width: 145px;
+  color: #111827;
+  border: 1.5px solid #6250ed;
+}
+
+.button-primary {
+  color: #fff;
+  background: #6250ed;
+}
+
+.header-actions .button-primary { width: 145px; }
+
+.hero {
+  position: relative;
+  height: 765px;
+  display: flex;
+  align-items: center;
+  background: url("unsplash_-2vD8lIhdnw.jpg") center 42% / cover no-repeat;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(10, 18, 24, .62), rgba(10, 18, 24, .32));
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  width: 1280px;
+  margin: 0 auto;
+  color: #fff;
+}
+
+.hero h1 {
+  max-width: 990px;
+  margin: 0 0 24px;
+  font-size: 54px;
+  line-height: 1.2;
+  letter-spacing: -1.5px;
+}
+
+.hero p {
+  margin: 0 0 38px;
+  font-size: 20px;
+  line-height: 1.55;
+  font-weight: 600;
+}
+
+.hero-button { height: 54px; padding: 0 30px; font-size: 16px; }
+
+.section { max-width: 1440px; margin: 0 auto; }
+
+.about {
+  min-height: 404px;
+  display: grid;
+  grid-template-columns: 1fr 500px;
+  align-items: center;
+  gap: 95px;
+  padding: 58px 80px 50px;
+}
+
+.about h2,
+.reasons h2,
+.community h2 {
+  margin: 0;
+  font-size: 38px;
+  line-height: 1.2;
+  letter-spacing: -1px;
+}
+
+.about p {
+  max-width: 730px;
+  margin: 25px 0 0;
+  font-size: 15px;
+  line-height: 1.55;
+}
+
+.about-image {
+  width: 500px;
+  height: 292px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.reasons {
+  min-height: 552px;
+  padding: 55px 80px 64px;
+}
+
+.section-heading { text-align: center; }
+
+.section-heading h2 { text-transform: lowercase; }
+
+.section-heading p {
+  margin: 26px 0 42px;
+  font-size: 15px;
+  line-height: 1.55;
+}
+
+.reason-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 80px;
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+.reason-card {
+  min-height: 300px;
+  padding: 28px 36px 30px;
+  border: 1px solid #dfe3ea;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.reason-icon {
+  width: 48px;
+  height: 48px;
+  display: grid;
+  place-items: center;
+  margin-bottom: 18px;
+  border-radius: 8px;
+  background: #f1f1f8;
+}
+
+.reason-icon svg {
+  width: 24px;
+  height: 24px;
+  fill: none;
+  stroke: #3c3f4a;
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.reason-card h3 {
+  margin: 0 0 16px;
+  font-size: 18px;
+}
+
+.reason-card p {
+  margin: 0;
+  color: #616978;
+  font-size: 14px;
+  line-height: 1.65;
+}
+
+.testimonial {
+  min-height: 374px;
+  display: grid;
+  grid-template-columns: 310px 1fr;
+  align-items: center;
+  gap: 55px;
+  padding: 45px 200px 45px 80px;
+  background: #f4f4f9;
+}
+
+.portrait {
+  width: 292px;
+  height: 292px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center 20%;
+  background: #ced1df;
+}
+
+.testimonial-copy blockquote {
+  margin: 0 0 24px;
+  max-width: 760px;
+  font-size: 15px;
+  line-height: 1.55;
+}
+
+.author { margin: 0 0 24px; font-size: 16px; }
+.author span { color: #606773; }
+.testimonial-button { height: 54px; padding: 0 28px; font-size: 15px; }
+
+.community {
+  min-height: 568px;
+  display: grid;
+  grid-template-columns: 430px 1fr;
+  align-items: center;
+  gap: 80px;
+  padding: 70px 130px 70px 180px;
+}
+
+.avatars {
+  position: relative;
+  width: 400px;
+  height: 350px;
+}
+
+.avatar {
+  position: absolute;
+  width: 154px;
+  height: 154px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.avatar-top { top: 0; left: 0; }
+.avatar-left { left: 35px; bottom: 0; }
+.avatar-right { right: 0; top: 130px; }
+
+.community-copy h2 { max-width: 760px; font-size: 42px; }
+.community-copy p {
+  max-width: 650px;
+  margin: 28px 0;
+  font-size: 15px;
+  line-height: 1.55;
+}
+.community-copy .button { height: 54px; padding: 0 30px; font-size: 15px; }
+
+.site-footer {
+  height: 300px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+  padding: 70px 80px;
+  background: #fff;
+}
+
+.footer-brand { margin-top: 6px; }
+
+.footer-links {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+}
+
+.footer-links div { display: flex; flex-direction: column; }
+.footer-links h3 { margin: 0 0 28px; font-size: 16px; }
+.footer-links a { margin-bottom: 18px; font-size: 14px; }
+
+@media (max-width: 900px) {
+  .site-header {
+    height: auto;
+    grid-template-columns: 1fr auto;
+    padding: 24px;
+  }
+  .brand { font-size: 36px; }
+  .main-nav { display: none; }
+  .header-actions { gap: 10px; }
+  .header-actions .button { width: auto; height: 48px; padding: 0 18px; }
+
+  .hero { height: 520px; }
+  .hero-content { width: auto; padding: 24px; }
+  .hero h1 { font-size: 38px; }
+  .hero h1 br, .hero p br { display: none; }
+  .hero p { max-width: 520px; }
+
+  .about,
+  .testimonial,
+  .community {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    padding: 50px 24px;
+  }
+  .about-image { width: 100%; height: auto; }
+  .reasons { padding: 50px 24px; }
+  .section-heading h2 { font-size: 32px; }
+  .section-heading p br { display: none; }
+  .reason-grid { grid-template-columns: 1fr; gap: 20px; }
+  .reason-card { min-height: auto; }
+
+  .testimonial { grid-template-columns: 180px 1fr; padding-right: 24px; }
+  .portrait { width: 180px; height: 180px; }
+
+  .community { grid-template-columns: 1fr; }
+  .avatars { width: 100%; }
+
+  .site-footer {
+    height: auto;
+    grid-template-columns: 1fr;
+    gap: 50px;
+    padding: 50px 24px;
+  }
+}
+
+@media (max-width: 600px) {
+  .header-actions .button-outline { display: none; }
+  .hero { height: 480px; }
+  .hero h1 { font-size: 32px; }
+  .testimonial { grid-template-columns: 1fr; }
+  .portrait { width: 220px; height: 220px; }
+  .community-copy h2 { font-size: 32px; }
+  .avatars { height: 300px; transform: scale(.8); transform-origin: left top; }
+  .footer-links { grid-template-columns: 1fr 1fr; }
+}
